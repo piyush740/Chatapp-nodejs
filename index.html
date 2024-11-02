@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Group Chat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <aside class="sidebar">
+            <div class="nickname-form">
+                <input type="text" class="nickname-input" placeholder="Enter nickname..." id="nickname-input">
+                <button class="nickname-button" id="set-nickname">
+                    <i class="fas fa-user-edit"></i> Set Nickname
+                </button>
+            </div>
+            <div class="user-list" id="user-list">
+                <!-- Dynamically added users -->
+            </div>
+        </aside>
+
+        <main class="main-chat">
+            <header class="chat-header">
+                <h1><i class="fas fa-comments"></i> Group Chat</h1>
+                <div class="chat-header-actions">
+                    <button class="action-button" title="Users">
+                        <i class="fas fa-user-friends"></i>
+                    </button>
+                    <button class="action-button" title="Settings">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                </div>
+            </header>
+
+            <div class="chat-messages" id="chat-messages">
+                <!-- Dynamically added messages -->
+            </div>
+
+            <div class="chat-input-container">
+                <div class="chat-input-wrapper">
+                    <input type="text" class="chat-input" placeholder="Type a message..." id="message-input">
+                    <div class="chat-actions">
+                        <button class="action-button" id="emoji-button" title="Emoji">
+                            <i class="far fa-smile"></i>
+                        </button>
+                        <button class="action-button" title="Attach Image">
+                            <i class="far fa-image"></i>
+                        </button>
+                        <button class="send-button" id="send-button" title="Send Message">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
